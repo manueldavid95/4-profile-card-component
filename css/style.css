@@ -1,0 +1,118 @@
+:root {
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+
+    --Dark-gray: hsl(0, 0%, 59%);
+}
+
+html {
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+}
+
+body {
+    position: relative;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 1.125rem; /* 18px la fuente */
+    overflow-x: hidden;
+    background: var(--Dark-cyan);
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    width: 978px;
+    height: 978px;
+    top: 0;
+    left: 0;
+    background-image: url(../images/bg-pattern-top.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+}
+
+h1, h3 {
+    margin: 0;
+}
+
+.contenedor {
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.contenedor-tarjeta {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjeta {
+    position: relative;
+    width: 100%;
+    max-width: 360px;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.header-tarjeta img {
+    width: 100%;
+}
+
+.perfil-img {
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    border-radius: 100%;
+    border: 5px solid white;
+}
+
+.body-tarjeta {
+    padding-top: 60px;
+}
+
+.body-tarjeta h1 {
+    font-size: 16px;
+    text-align: center;
+    color: var(--Very-dark-desaturated-blue);
+}
+
+.body-tarjeta .parrafo {
+    font-size: 13px;
+    text-align: center;
+    color: var(--Dark-grayish-blue);
+}
+
+.estadisticas { 
+    margin-top: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    border-top: medium solid rgb(240, 240, 240);
+}
+
+.titulo-estadisticas {
+    color: var(--Very-dark-desaturated-blue);
+}
+
+.parrafo-estadisticas {
+    font-size: 13px;
+    color: var(--Dark-gray);
+}
